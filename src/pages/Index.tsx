@@ -34,9 +34,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-grow pb-16">
         <Hero 
-          title="Lettuce know what it is!" 
-          description="Upload your fruit&vegetable pictures"
-        />
+          title="Lettuce know what it is !"
+          description=" " />
         
         <ImageUploader 
           onImageSelect={handleImageSelect} 
@@ -56,28 +55,19 @@ const Index = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <h2 className="text-xl font-medium text-center mb-8">Exemples à essayer</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {["pomme", "banane", "fraise", "carotte"].map((fruit, index) => (
-              <div 
-                key={fruit} 
-                className="image-container subtle-shadow aspect-square bg-muted/30 rounded-lg overflow-hidden"
-              >
-                <img 
-                  src={`https://source.unsplash.com/featured/?${fruit}`} 
-                  alt={fruit}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+          <h2 className="text-xl font-medium text-center mb-8">Give it a try !</h2>
+<div className="grid grid-cols-4 gap-4">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAaOkegOMXO_eKaOKeHx0tY6A-F9CPD-ZOg&s" alt="Image 1" className="w-full h-48 object-cover" />
+  <img src="https://terrabacchus.fr/wp-content/uploads/sites/25/2017/05/Pomme-Fuji.jpg" alt="Image 2" className="w-full h-48 object-cover" />
+  <img src="https://mapetiteassiette.com/wp-content/uploads/2021/06/AdobeStock_254635130-min-min.png" alt="Image 3" className="w-full h-48 object-cover" />
+  <img src="https://www.aprifel.com/wp-content/uploads/2019/02/carotte.jpg" alt="Image 4" className="w-full h-48 object-cover" />
+</div>
         </motion.section>
       </main>
       
       <footer className="py-6 border-t border-gray-100">
         <div className="container text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Reconnaissance de Fruits et Légumes</p>
+          <p>© {new Date().getFullYear()} Smartichoke</p>
         </div>
       </footer>
     </div>
