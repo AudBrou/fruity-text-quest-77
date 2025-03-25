@@ -137,13 +137,13 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onImageSelect, isLoading 
                 )}
               </motion.div>
               <h3 className="text-lg font-medium mb-2">
-                {dragActive ? "Déposez votre image ici" : "Téléchargez une image de fruit ou légume"}
+                {dragActive ? "Drop your picture here" : "Upload your Fruit or Vegetable picture"}
               </h3>
               <p className="text-sm text-muted-foreground">
-                {dragActive ? "Relâchez pour analyser" : "Glissez-déposez ou cliquez pour sélectionner"}
+                {dragActive ? " " : "Drag&Drop or click here to select"}
               </p>
               <p className="text-xs text-muted-foreground mt-2">
-                Formats supportés: JPG, PNG, WEBP
+                JPG, PNG, WEBP only
               </p>
             </motion.div>
           )}
