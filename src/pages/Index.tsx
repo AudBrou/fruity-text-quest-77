@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
@@ -35,8 +34,8 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-grow pb-16">
         <Hero 
-          title="Reconnaissance de Fruits et Légumes" 
-          description="Téléchargez une image de fruit ou de légume et notre intelligence artificielle l'identifiera instantanément."
+          title="Lettuce know what it is!" 
+          description="Upload your fruit&vegetable pictures"
         />
         
         <ImageUploader 
