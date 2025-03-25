@@ -33,8 +33,11 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <main className="flex-grow pb-16">
+
+      <img src="src/components/carotte.jpg" alt="Logo" className="w-40 h-40" />
+        
         <Hero 
-          title="Lettuce know what it is !"
+            title="Lettuce know what it is !"
           description=" " />
         
         <ImageUploader 

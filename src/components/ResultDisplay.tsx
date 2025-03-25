@@ -18,14 +18,14 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ result }) => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
           >
-            <motion.div
-              className="inline-block mb-4 px-3 py-1 bg-primary/10 rounded-full text-xs font-medium text-primary"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              Résultat
-            </motion.div>
+  <motion.div
+    className="inline-block mb-4 px-3 py-1 text-gray-500"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.2 }}
+  >
+    Result
+  </motion.div>
             
             <motion.h2
               className="text-2xl md:text-3xl font-display font-bold mb-2"
@@ -43,14 +43,14 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ result }) => {
               transition={{ delay: 0.4, duration: 0.4 }}
             />
             
-            <motion.p
-              className="text-muted-foreground text-lg"
+            <motion.div
+              className="inline-block mb-4 px-3 py-1 text-gray-500 text-xs"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.2 }}
             >
-              Nous avons identifié cette image comme étant un <span className="font-medium text-foreground">{result}</span>.
-            </motion.p>
+              Accuracy is <span className="font-medium text-foreground">{result}</span>.
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
