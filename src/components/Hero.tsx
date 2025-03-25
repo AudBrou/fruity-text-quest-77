@@ -16,15 +16,6 @@ const Hero: React.FC<HeroProps> = ({ title, description }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <motion.div
-          className="inline-block mb-4 px-4 py-1.5 bg-primary/10 rounded-full text-sm font-medium text-primary"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          Intelligence Artificielle
-        </motion.div>
-        
         <motion.h1 
           className="font-['Roboto'] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white uppercase"
           initial={{ opacity: 0 }}
