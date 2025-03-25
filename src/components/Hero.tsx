@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ title, description }) => {
         </motion.div>
         
         <motion.h1 
-          className="font-['Karbon'] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white"
+          className="font-['Roboto'] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white uppercase"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
